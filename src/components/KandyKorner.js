@@ -3,6 +3,7 @@ import LocationList from "./location/LocationList"
 import { LocationProvider } from "./location/LocationProvider"
 import { ProductProvider } from "./product/ProductProvider"
 import ProductList from "./product/ProductList"
+import { ProductTypeProvider } from "./productType/ProductTypeProvider"
 
 
 export default () => (
@@ -14,7 +15,9 @@ export default () => (
 
         <h2>Products</h2>
         <ProductProvider>
-            <ProductList />
+            <ProductTypeProvider>
+              <ProductList />
+            </ProductTypeProvider>
         </ProductProvider>
     </>
 )
